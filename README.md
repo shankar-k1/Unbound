@@ -1,5 +1,5 @@
 
-## Available Scripts
+## Available Scripts - to get into unbound shopping
 
 In the project directory, you can run:
 
