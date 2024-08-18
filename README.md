@@ -2,6 +2,9 @@
 ## Available Scripts - to get into unbound shopping
 
 In the project directory, you can run:
+Branch stat 
+------Main --> Project code without node modules.
+------Deploy --> Project build files
 
 ### `npm start`
 
