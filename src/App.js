@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/navbar";
+import { Shop } from "./pages/shop/shop";
+import { Cart } from "./pages/cart/cart";
+import { Contact } from "./pages/Contact/contact";
+import { Details } from "./pages/details/details";
+import { ShopContextProvider } from "./context/shop-context";
+import Login from './pages/login/LoginButton';
+import {Checkout} from "./pages/cart/checkout";
+// import LogoutButton  from './pages/login/LogoutButton';
+import Profile  from './pages/login/Profile';
+import React from "react";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ShopContextProvider>
+        <Router>
+        <Navbar />
+          <Routes>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/shop" element={<Shop />}   />
+            <Route path="/" element={<Login />} /> 
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/detail" element={<Details />} /> 
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider> 
     </div>
+    
   );
-}
+};
 
 export default App;

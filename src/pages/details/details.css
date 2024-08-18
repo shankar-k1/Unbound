@@ -1,0 +1,19 @@
+.detail {
+  display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5cm;
+  }
+
+  table {
+    border: 2px solid rgb(177, 187, 177);
+    
+}
+th {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+td {
+  text-align: center;
+}

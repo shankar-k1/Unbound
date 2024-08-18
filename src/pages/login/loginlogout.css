@@ -1,0 +1,26 @@
+.login{
+    margin: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.profile{
+    margin: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.logout Button {
+    margin-left: 20px;
+    margin-right: 20px; /* Adds space between the buttons */
+    padding: 10px 20px;  /* Adds padding inside the buttons */
+}
+.oflogout{
+    margin: 10%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
